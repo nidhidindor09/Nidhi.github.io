@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nidhi Dindor - Portfolio</title>
+
+    <style>
+        /* Google Font */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: #0d0d0d;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* NAVBAR */
+        nav {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 18px 60px;
+            position: fixed;
+            top: 0;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            z-index: 100;
+        }
+
+        nav h1 {
+            font-size: 22px;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #dcdcdc;
+            font-size: 15px;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #00eaff;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 100px;
+        }
+
+        /* Left Content */
+        .left {
+            max-width: 560px;
+        }
+
+        .tagline {
+            color: #00eaff;
+            font-size: 14px;
+            letter-spacing: 2px;
+        }
+
+        .name {
+            font-size: 48px;
+            font-weight: 600;
+            margin: 10px 0;
+        }
+
+        .intro {
+            font-size: 17px;
+            line-height: 1.6;
+            color: #cfcfcf;
+        }
+
+        .btn {
+            margin-top: 22px;
+            background: #00eaff;
+            color: #000;
+            padding: 12px 26px;
+            border-radius: 6px;
+            font-size: 16px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #00bcd4;
+        }
+
+        /* PHOTO PLACEHOLDER */
+        .photo {
+            width: 320px;
+            height: 320px;
+            background: linear-gradient(135deg, #222, #555);
+            border-radius: 50%;
+            border: 3px solid #00eaff;
+            box-shadow: 0 0 20px rgba(0, 238, 255, 0.3);
+        }
+
+        @media(max-width: 900px) {
+            .hero {
+                flex-direction: column-reverse;
+                text-align: center;
+                padding: 50px 20px;
+            }
+            .photo {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <h1>Nidhi Dindor</h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Certificates</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Source Code</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO (FIRST PAGE) -->
+    <section class="hero">
+        <div class="left">
+            <p class="tagline">Learning fast. Building better.</p>
+
+            <h2 class="name">Hi, I'm <br> Nidhi Dindor</h2>
+
+            <p class="intro">
+                I'm a Computer Science Engineering student at Charusat University.  
+                I focus on building practical solutions, exploring new technologies,  
+                and sharpening my problem-solving skills.  
+                Currently improving through hands-on projects and real-world learning.
+            </p>
+
+            <a href="#" class="btn">Explore My Work</a>
+        </div>
+
+        <!-- Placeholder Photo -->
+        <div class="photo"></div>
+    </section>
+
+</body>
+</html>

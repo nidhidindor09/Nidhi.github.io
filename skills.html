@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nidhi | Skills & Projects</title>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+    body {
+        margin: 0;
+        padding: 0;
+        background: #0d0d0d;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    /* NAVBAR */
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 18px 60px;
+        position: fixed;
+        top: 0;
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+        z-index: 100;
+    }
+
+    nav h1 {
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 30px;
+        list-style: none;
+    }
+
+    nav ul li a {
+        color: #dcdcdc;
+        text-decoration: none;
+        transition: .3s;
+    }
+
+    nav ul li a:hover {
+        color: #00eaff;
+    }
+
+    /* PAGE CONTAINER */
+    .container {
+        width: 100%;
+        margin-top: 120px;
+        padding: 20px 70px;
+    }
+
+    h2 {
+        font-size: 34px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        color: #00eaff;
+    }
+
+    /* SKILLS SECTION */
+    .skills-box {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        background: rgba(255,255,255,0.05);
+        padding: 25px;
+        border-radius: 10px;
+        border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .skill-item span {
+        font-weight: 600;
+        color: #00eaff;
+    }
+
+    /* PROJECTS SECTION */
+    .projects {
+        margin-top: 60px;
+    }
+
+    .project-card {
+        background: rgba(255,255,255,0.05);
+        padding: 25px;
+        border-radius: 10px;
+        margin-bottom: 25px;
+        border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .project-card h3 {
+        margin: 0;
+        font-size: 22px;
+        color: white;
+    }
+
+    .project-card p {
+        margin: 10px 0;
+        color: #d8d8d8;
+        line-height: 1.6;
+    }
+
+    .tag {
+        display: inline-block;
+        margin-right: 8px;
+        margin-top: 10px;
+        background: #00eaff;
+        color: #000;
+        padding: 5px 12px;
+        border-radius: 5px;
+        font-size: 13px;
+    }
+
+    @media(max-width: 900px) {
+        nav {
+            padding: 18px 20px;
+        }
+        .container {
+            padding: 20px;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <h1>Nidhi Dindor</h1>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="certificates.html">Certificates</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="sourcecode.html">Source Code</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+
+    <!-- SKILLS -->
+    <h2>Skills</h2>
+    <div class="skills-box">
+        <div class="skill-item"><span>Programming:</span> C</div>
+        <div class="skill-item"><span>Tools:</span> VS Code</div>
+        <div class="skill-item"><span>Frameworks:</span> None</div>
+    </div>
+
+    <!-- PROJECTS -->
+    <div class="projects">
+        <h2>Projects</h2>
+
+        <!-- Project 1 -->
+        <div class="project-card">
+            <h3>IoT Based Weather Monitoring System</h3>
+            <p>
+                A simple IoT setup that tracks temperature and humidity using a DHT11 sensor.  
+                The system sends real-time readings to a microcontroller and displays the data on the serial monitor,  
+                demonstrating basic environmental monitoring using IoT.
+            </p>
+            <span class="tag">ESP32/Arduino</span>
+            <span class="tag">DHT11</span>
+            <span class="tag">C Programming</span>
+            <span class="tag">IoT</span>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+            <h3>Pong Game Using C</h3>
+            <p>
+                A console-based Pong game created using C.  
+                Includes ball movement, paddle control, and collision logic inside the terminal.  
+                Demonstrates looping, conditions, and basic game programming logic.
+            </p>
+            <span class="tag">C Language</span>
+            <span class="tag">Console Game</span>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
+
